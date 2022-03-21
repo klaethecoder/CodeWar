@@ -18,3 +18,19 @@ def solution(string, ending):
 # test.assert_equals(solution('abcde', 'cde'), True)
 # test.assert_equals(solution('abcde', 'abc'), False)
 # test.assert_equals(solution('abcde', ''), True)
+
+# Solutions:
+
+# Solution 1:
+# def solution(string, ending):
+#     if string.endswith(ending):
+#         return True
+#     return False
+
+# Solution 2:
+# def solution(string, ending):
+#     return ending in string[-len(ending):]
+
+# Solution 3:
+# def solution(string, ending):
+#     return string.endswith(ending)

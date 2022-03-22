@@ -21,3 +21,17 @@ def count(string):
 # test.assert_equals(count('aba'), {'a': 2, 'b': 1})
 # test.assert_equals(count(''), {})
 
+# Solutions:
+
+# Solution 1:
+# from collections import Counter
+
+# def count(string):
+#     return Counter(string)
+
+# Solution 2:
+# def count(string):
+  
+    # return {i: string.count(i) for i in string}
+
+    
